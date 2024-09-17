@@ -26,7 +26,7 @@ This project focuses on building basic image processing tools and a K-Nearest Ne
    - Scroll and pan across images.
    - Built using the Tkinter library and PIL (Python Imaging Library).
 
-### Example: Sticker Overlay
+## Example: Sticker Overlay
 ```python
 >>> img_proc = PremiumImageProcessing()
 >>> img_sticker = img_read_helper('img/square_6x6.png')
