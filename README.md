@@ -26,11 +26,14 @@ This project focuses on building basic image processing tools and a K-Nearest Ne
    - Scroll and pan across images.
    - Built using the Tkinter library and PIL (Python Imaging Library).
 
-## Installation
-
-To run the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Basic-Image-Processing-with-OOP.git
-   cd Basic-Image-Processing-with-OOP
+### Example: Sticker Overlay
+```python
+>>> img_proc = PremiumImageProcessing()
+>>> img_sticker = img_read_helper('img/square_6x6.png')
+>>> img_back = img_read_helper('img/test_image_32x32.png')
+>>> x, y = (3, 3)
+>>> img_exp = img_read_helper('img/exp/test_image_32x32_sticker.png')
+>>> img_combined = img_proc.sticker(img_sticker, img_back, x, y)
+>>> img_combined.pixels == img_exp.pixels  # Check sticker output
+True
+>>> img_save_helper('img/out/test_image_32x32_sticker.png', img_combined)
